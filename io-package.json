@@ -1,0 +1,120 @@
+{
+	"common": {
+		"name": "state",
+		"version": "0.0.3",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			},
+			
+			"0.0.2": {
+				"en": "initial test",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			},
+			"0.0.3": {
+				"en": "initial objects testing",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "state",
+		"titleLang": {
+			"en": "state",
+			"de": "Zustand",
+			"ru": "государство",
+			"pt": "Estado",
+			"nl": "staat",
+			"fr": "Etat",
+			"it": "stato",
+			"es": "estado",
+			"pl": "stan",
+			"zh-cn": "州"
+		},
+		"desc": {
+			"en": "its for the testing purpose",
+			"de": "es ist für den Testzweck",
+			"ru": "его для целей тестирования",
+			"pt": "é para fins de teste",
+			"nl": "het is voor het testen",
+			"fr": "son à des fins de test",
+			"it": "è a scopo di test",
+			"es": "es para el propósito de prueba",
+			"pl": "jest to do celów testowych",
+			"zh-cn": "其用于测试目的"
+		},
+		"authors": [
+			"ahsan <ahsanali3174@gmail.com>"
+		],
+		"keywords": [
+			"test"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "state.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/AhsanAli13503/ioBroker.state/master/admin/state.png",
+		"readme": "https://github.com/AhsanAli13503/ioBroker.state/blob/master/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "protocols",
+		"compact": true,
+		"materialize": true,
+		"dependencies": [
+			{
+				"js-controller": ">=1.4.2"
+			}
+		]
+	},
+	"native": {
+		
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}
